@@ -1,0 +1,79 @@
+{
+  "tighnari": {
+    "rarity": 5,
+    "release_version": "3.0",
+    "element": "dendro",
+    "weapon": "bow"
+  },
+  "collei": {
+    "rarity": 4,
+    "region": "Sumeru",
+    "release_version": "3.0",
+    "element": "dendro",
+    "weapon": "bow"
+  },
+  "kokomi": {
+    "rarity": 5,
+    "region": "Inazuma",
+    "release_version": "2.4",
+    "element": "hydro",
+    "weapon": "catalyst"
+  },
+  "gorou": {
+    "rarity": 4,
+    "region": "Inazuma",
+    "release_version": "2.4",
+    "element": "geo",
+    "weapon": "bow"
+  },
+  "nilou": {
+    "rarity": 5,
+    "region": "Sumeru",
+    "release_version": "3.1",
+    "element": "hydro",
+    "weapon": "sword"
+  },
+  "nahida": {
+    "rarity": 5,
+    "region": "Sumeru",
+    "release_version": "3.2",
+    "element": "dendro",
+    "weapon": "catalyst"
+  },
+  "klee": {
+    "rarity": 5,
+    "region": "Mondstadt",
+    "release_version": "1.0",
+    "element": "pyro",
+    "weapon": "catalyst"
+  },
+  "hutao": {
+    "rarity": 5,
+    "region": "Liyue",
+    "release_version": "1.3",
+    "element": "pyro",
+    "weapon": "polearm"
+  },
+  "ganyu": {
+    "rarity": 5,
+    "region": "Liyue",
+    "release_version": "1.2",
+    "element": "cryo",
+    "weapon": "bow"
+  },
+
+  "ayaka": {
+    "rarity": 5,
+    "region": "Inazuma",
+    "release_version": "2.0",
+    "element": "cryo",
+    "weapon": "sword"
+  },
+  "kazuha": {
+    "rarity": 5,
+    "region": "Inazuma",
+    "release_version": "1.6",
+    "element": "anemo",
+    "weapon": "sword"
+  }
+}

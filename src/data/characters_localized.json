@@ -1,0 +1,427 @@
+{
+  "tighnari": {
+    "name": "Tighnari",
+    "region": "Sumeru",
+    "title": "Verdant Strider",
+    "body_type": "Medium Male",
+    "birthday": "12/29",
+    "constellation": {
+      "name": "Vulpes Zerda",
+      "levels": [
+        {
+          "name": "Beginnings Determined at the Roots",
+          "description": "Tighnari's Charged Attack CRIT Rate is increased by 15%."
+        },
+        {
+          "name": "Origins Known From the Stem",
+          "description": "When there are opponents within the Vijnana-Khanda Field created by Vijnana-Phala Mine, Tighnari gains 20% Dendro DMG Bonus.\nThe effect will last up to 6s if the field's duration ends or if it no longer has opponents within it."
+        },
+        {
+          "name": "Fortunes Read Amongst the Branches",
+          "description": "Increases the Level of Fashioner's Tanglevine Shaft by 3.\nMaximum upgrade level is 15."
+        },
+        {
+          "name": "Withering Glimpsed in the Leaves",
+          "description": "When Fashioner's Tanglevine Shaft is unleashed, all nearby party members gain 60 Elemental Mastery for 8s. If the Fashioner's Tanglevine Shaft triggers a Burning, Bloom, Quicken, or Spread reaction, their Elemental Mastery will be further increased by 60. This latter case will also refresh the buff state's duration."
+        },
+        {
+          "name": "Comprehension Amidst the Flowers",
+          "description": "Increases the Level of Vijnana-Phala Mine by 3.\nMaximum upgrade level is 15. "
+        },
+        {
+          "name": "Karma Adjudged From the Leaden Fruit",
+          "description": "Wreath Arrow's charging time is decreased by 0.9s, and will produce 1 additional Clusterbloom Arrow upon hit. This arrow deals 150% of Tighnari's ATK as DMG. "
+        }
+      ]
+    },
+    "talents": {
+      "normal": {
+        "name": "Khanda Barrier-Buster",
+        "description_normal": "Performs up to 4 consecutive shots with a bow.",
+        "description_charged": "Perform a more precise Aimed Shot with increased DMG.\nWhile aiming, the power of Dendro will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\n* Charge Level 1: Fires off an arrow carrying the power of flora that deals Dendro DMG.\n* Charge Level 2: Fires off a Wreath Arrow that deals Dendro DMG. Upon hit, the Wreath Arrow will create 4 Clusterbloom Arrows that will track nearby opponents automatically and deal Dendro DMG."
+      },
+      "skill": {
+        "name": "Vijnana-Phala Mine",
+        "description": "Tighnari throws a Vijnana Stormheart ahead of him that deals AoE Dendro DMG and creates a Vijnana-Khanda Field, which summons strange illusions to taunt enemies and draw their fire.\nAdditionally, Tighnari gains the Vijnana Suffusion effect, which will decrease the Wreath Arrow's charging time by 2.4s. This effect will dissipate once the skill duration ends or after Tighnari has fired 3 Wreath Arrows. "
+      },
+      "burst": {
+        "name": "Fashioner's Tanglevine Shaft",
+        "description": "Combines the power of all seeds to fire 6 Tanglevine Shafts that can track opponents and deal Dendro DMG.\n\nAfter they hit, the Tanglevine Shafts will create a secondary wave of Tanglevine Shafts that can also track opponents and deal Dendro DMG on hit. "
+      },
+      "ascension_passive_1": {
+        "name": "Keen Sight",
+        "description": "After Tighnari fires a Wreath Arrow, his Elemental Mastery is increased by 50 for 4s."
+      },
+      "ascension_passive_4": {
+        "name": "Scholarly Blade",
+        "description": "For every point of Elemental Mastery Tighnari possesses, his Charged Attack and Fashioner's Tanglevine Shaft DMG are increased by 0.06%.\nThe maximum DMG Bonus obtainable this way is 60%. "
+      },
+      "utility": {
+        "name": "Encyclopedic Knowledge",
+        "description": "Displays the location of nearby resources unique to Sumeru on the mini-map. "
+      }
+    }
+  },
+  "collei": {
+    "name": "Collei",
+    "region": "Sumeru",
+    "title": "Sprout of Rebirth",
+    "body_type": "Medium Female",
+    "birthday": "5/8",
+    "constellation": {
+      "name": "Leptailurus Cervarius",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+    
+  },
+  "kokomi": {
+    "name": "Sangonomiya Kokomi",
+    "region": "Inazuma",
+    "title": "Pearl of Wisdom",
+    "body_type": "Medium Female",
+    "birthday": "2/2",
+    "constellation": {
+      "name": "Dracaena Somnolenta",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+  "gorou": {
+    "name": "Gorou",
+    "region": "Inazuma",
+    "title": "Canine Warrior",
+    "body_type": "Medium Male",
+    "birthday": "5/18",
+    "constellation": {
+      "name": "Canis Bellatoris",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+  "nilou": {
+    "name": "Nilou",
+    "region": "Sumeru",
+    "title": "Dance of Lotuslight",
+    "body_type": "Medium Female",
+    "birthday": "12/3",
+    "constellation": {
+      "name": "Lotos Somno",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+  "nahida": {
+    "name": "Nahida",
+    "region": "Sumeru",
+    "title": "Physic of Purity",
+    "body_type": "Short Female",
+    "birthday": "10/27",
+    "constellation": {
+      "name": "Sapientia Oromasdis",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+  "klee": {
+    "name": "Klee",
+    "region": "Mondstadt",
+    "title": "Fleeing Sunlight",
+    "body_type": "Short Female",
+    "birthday": "7/27",
+    "constellation": {
+      "name": "Trifolium",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+  "hutao": {
+    "name": "Hu Tao",
+    "region": "Liyue",
+    "title": "Fragrance in Thaw",
+    "body_type": "Medium Female",
+    "birthday": "7/15",
+    "constellation": {
+      "name": "Papilio Charontis",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+  "ganyu": {
+    "name": "Ganyu",
+    "region": "Liyue",
+    "title": "Plenilune Gaze",
+    "body_type": "Medium Female",
+    "birthday": "12/2",
+    "constellation": {
+      "name": "Sinae Unicornis",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+
+  "ayaka": {
+    "name": "Kamisato Ayaka",
+    "region": "Inazuma",
+    "title": "Frostflake Heron",
+    "body_type": "Medium Female",
+    "birthday": "9/28",
+    "constellation": {
+      "name": "Grus Nivis",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  },
+  "kazuha": {
+    "name": "Kaedehara Kazuha",
+    "region": "Inazuma",
+    "title": "Scarlet Leaves Pursue Wild Waves",
+    "body_type": "Medium Male",
+    "birthday": "10/29",
+    "constellation": {
+      "name": "Acer Palmatum",
+      "levels": [
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        },
+        {
+          "name": "tbd",
+          "description": "tbd"
+        }
+      ]
+    }
+  }
+}
