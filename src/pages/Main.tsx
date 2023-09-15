@@ -1,14 +1,5 @@
-import React from 'react'
-import { styled } from '@mui/material/styles';
-import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea } from '@mui/material';
-import { Routes, Route, Outlet, Link } from "react-router-dom";
-import { ResponsiveDrawer } from '../components/Drawer'
+import { Outlet } from "react-router-dom";
+import { ResponsiveDrawer } from '../components/Drawer';
 
 export const Main = () => {
   return (

@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction, current } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../store/api_cache'
 interface ApiCacheState {
   charactersBasic: any,
@@ -23,7 +23,7 @@ export const apiCacheSlice = createSlice({
   }
 })
 
-export const { updateCharactersBasic, updateCharacter} = apiCacheSlice.actions
+export const { updateCharactersBasic, updateCharacter } = apiCacheSlice.actions
 export const selectCharactersBasic = (state: RootState) => state.apiCache.charactersBasic
 export const selectCharacter = (state: RootState, name: string) => state.apiCache.charactersDetailed[name]
 export const selectCharactersDetailed = (state: RootState) => state.apiCache.charactersDetailed

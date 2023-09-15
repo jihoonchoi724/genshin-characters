@@ -1,33 +1,10 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import localizedData from '../data/characters_localized.json'
-import universalData from '../data/characters_universal.json'
-import Box from '@mui/material/Box'
-import AppBar from '@mui/material/AppBar'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import CssBaseline from '@mui/material/CssBaseline'
-import Container from '@mui/material/Container'
-import Divider from '@mui/material/Divider'
-import Drawer from '@mui/material/Drawer'
-import IconButton from '@mui/material/IconButton'
-import Grid from '@mui/material/Grid'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import ListItemText from '@mui/material/ListItemText'
-import MailIcon from '@mui/icons-material/Mail'
-import MenuIcon from '@mui/icons-material/Menu'
-import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import Paper from '@mui/material/Paper'
 import "@fontsource/lato/700.css"
 import StarIcon from '@mui/icons-material/Star'
-import { useAppSelector } from '../hooks'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import React from 'react'
 import { selectCharacter } from '../api_cache/api_cache_slice'
+import { useAppSelector } from '../hooks'
 import { capitalize } from '../utils'
 
 interface CharacterHeaderProps {
@@ -45,22 +22,22 @@ export const CharacterHeader = (props: CharacterHeaderProps) => {
   const weapon: string = character.weapon.toLowerCase()
 
   let stars: React.ReactNode
-  if (rarity == 4) {
+  if (rarity === 4) {
     stars =
       <Box color='#ffce30' fontSize='large'>
-        <StarIcon fontSize='large'/>
-        <StarIcon fontSize='large'/>
-        <StarIcon fontSize='large'/>
-        <StarIcon fontSize='large'/>
+        <StarIcon fontSize='large' />
+        <StarIcon fontSize='large' />
+        <StarIcon fontSize='large' />
+        <StarIcon fontSize='large' />
       </Box>
-  } else if (rarity == 5) {
+  } else if (rarity === 5) {
     stars =
       <Box color='#ffce30' fontSize='large' >
-        <StarIcon fontSize='large'/>
-        <StarIcon fontSize='large'/>
-        <StarIcon fontSize='large'/>
-        <StarIcon fontSize='large'/>
-        <StarIcon fontSize='large'/>
+        <StarIcon fontSize='large' />
+        <StarIcon fontSize='large' />
+        <StarIcon fontSize='large' />
+        <StarIcon fontSize='large' />
+        <StarIcon fontSize='large' />
       </Box>
   } else {
     stars = <React.Fragment></React.Fragment>

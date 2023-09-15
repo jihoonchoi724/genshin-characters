@@ -1,19 +1,20 @@
-import * as React from 'react'
-import { Routes, Route, Outlet, Link } from 'react-router-dom'
-import { Main } from './pages/Main'
-import { Home } from './pages/Home'
-import { Character } from './pages/Character'
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 import '@fontsource/lato'
-import axios from 'axios';
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+import axios from 'axios'
+import { Link, Route, Routes } from 'react-router-dom'
+import { selectCharactersBasic, updateCharactersBasic } from './api_cache/api_cache_slice'
 import { useAppDispatch, useAppSelector } from './hooks'
-import { updateCharactersBasic, selectCharactersBasic } from './api_cache/api_cache_slice'
+import { Character } from './pages/Character'
+import { Home } from './pages/Home'
+import { Main } from './pages/Main'
 import { Settings } from './pages/Settings'
 
 const getCharacters = async () => {
   const apiCache: any = {}
 
   var response = await axios.get(process.env.REACT_APP_API_URL + "/characters")
+  console.log(response)
+  console.log(process.env.REACT_APP_API_URL)
   const charactersList: Array<any> = response.data
   for (var character of charactersList) {
     apiCache[character["character_id"]] = character
@@ -31,11 +32,11 @@ export default function App() {
 
   const dispatch = useAppDispatch()
   const charactersList = useAppSelector(selectCharactersBasic)
-  if (Object.keys(charactersList).length == 0) {
+  if (Object.keys(charactersList).length === 0) {
     getCharacters()
-    .then(apiCache => {
-      dispatch(updateCharactersBasic(apiCache))
-    })
+      .then(apiCache => {
+        dispatch(updateCharactersBasic(apiCache))
+      })
   }
 
   if (localStorage.getItem("traveler-gender") === null) {
@@ -44,7 +45,7 @@ export default function App() {
     localStorage.setItem("traveler-name", "Traveler")
     localStorage.setItem("wanderer-name", "Wanderer")
   }
-  
+
   return (
     <ThemeProvider theme={theme}>
       <div>

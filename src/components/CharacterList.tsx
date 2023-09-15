@@ -1,20 +1,9 @@
-import React, {useState, useEffect} from 'react'
-import { styled } from '@mui/material/styles'
-import ButtonBase from '@mui/material/ButtonBase'
-import Typography from '@mui/material/Typography'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import { CardActionArea } from '@mui/material'
-import { CharacterButton } from './CharacterButton'
-import localizedData from '../data/characters_localized.json'
-import universalData from '../data/characters_universal.json'
+import Box from '@mui/material/Box'
 import Grid2 from '@mui/material/Unstable_Grid2'
-import {useNavigate} from 'react-router-dom'
-import Box from '@mui/material/Box';
-import { useAppSelector } from '../hooks'
+import { useNavigate } from 'react-router-dom'
 import { selectCharactersBasic } from '../api_cache/api_cache_slice'
+import { useAppSelector } from '../hooks'
+import { CharacterButton } from './CharacterButton'
 
 /*
 const sortByName = (language: string) => {
@@ -44,19 +33,19 @@ export const CharacterList = () => {
   const characters: any = Array.from(Object.keys(charactersList)).map((character: string) => {
 
     return (
-    <Grid2>
-      <CharacterButton 
-        charID={character}
-        charName={charactersList[character].name}
-        rarity={charactersList[character].rarity}
-        vision={charactersList[character].vision}
-        context={img}
-        onClick={() => {
-          navigate("/character/" + character)
-          window.scrollTo(0, 0)
-        }}
-      />
-    </Grid2>
+      <Grid2>
+        <CharacterButton
+          charID={character}
+          charName={charactersList[character].name}
+          rarity={charactersList[character].rarity}
+          vision={charactersList[character].vision}
+          context={img}
+          onClick={() => {
+            navigate("/character/" + character)
+            window.scrollTo(0, 0)
+          }}
+        />
+      </Grid2>
     )
   })
 

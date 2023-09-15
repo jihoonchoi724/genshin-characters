@@ -1,40 +1,15 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
 import Box from '@mui/material/Box'
-import AppBar from '@mui/material/AppBar'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import CssBaseline from '@mui/material/CssBaseline'
-import Container from '@mui/material/Container'
-import Divider from '@mui/material/Divider'
-import Drawer from '@mui/material/Drawer'
-import IconButton from '@mui/material/IconButton'
-import Grid from '@mui/material/Grid'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import ListItemText from '@mui/material/ListItemText'
-import MailIcon from '@mui/icons-material/Mail'
-import MenuIcon from '@mui/icons-material/Menu'
-import Toolbar from '@mui/material/Toolbar'
+import Paper from '@mui/material/Paper'
+import Table from '@mui/material/Table'
+import TableBody from '@mui/material/TableBody'
+import TableCell, { tableCellClasses } from '@mui/material/TableCell'
+import TableContainer from '@mui/material/TableContainer'
+import TableRow from '@mui/material/TableRow'
 import Typography from '@mui/material/Typography'
-import { CharacterHeader } from '../components/CharacterHeader'
-import { CharacterInfo } from '../components/CharacterInfo'
-import { styled } from '@mui/material/styles';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { useAppSelector } from '../hooks'
+import { styled } from '@mui/material/styles'
 import { selectCharacter } from '../api_cache/api_cache_slice'
+import { useAppSelector } from '../hooks'
 import { capitalize } from '../utils'
-import { store } from '../store/api_cache'
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.body}`]: {
@@ -81,12 +56,12 @@ export const CharacterBasicData = (props: CharacterBasicDataProps) => {
   const storedBirthday = localStorage.getItem("traveler-birthday")!.split("-")
   var displayBirthday = "User Set"
 
-  if (parsedBirthday.length == 3) {
+  if (parsedBirthday.length === 3) {
     displayBirthday = parsedBirthday[1].replace(/^0+/, '') + "/" + parsedBirthday[2].replace(/^0+/, '')
   } else {
-    displayBirthday = storedBirthday!.length == 3 ? (storedBirthday[1].replace(/^0+/, '') + "/" + storedBirthday[2].replace(/^0+/, '')) : ("User Set")
+    displayBirthday = storedBirthday!.length === 3 ? (storedBirthday[1].replace(/^0+/, '') + "/" + storedBirthday[2].replace(/^0+/, '')) : ("User Set")
   }
-  
+
   var constellation: string = character.constellation_name
 
   if (id!.includes("traveler")) {
@@ -109,14 +84,14 @@ export const CharacterBasicData = (props: CharacterBasicDataProps) => {
 
   return (
     <Box>
-      <TableContainer 
-        component={Paper} 
+      <TableContainer
+        component={Paper}
         sx={{
-          borderStyle:'solid', 
-          borderRadius:'15px', 
-          borderColor:'#806A9E',
-          borderWidth:'1px', 
-          backgroundColor:'#806A9E', 
+          borderStyle: 'solid',
+          borderRadius: '15px',
+          borderColor: '#806A9E',
+          borderWidth: '1px',
+          backgroundColor: '#806A9E',
           minWidth: '225px'
         }}
       >
@@ -133,7 +108,7 @@ export const CharacterBasicData = (props: CharacterBasicDataProps) => {
             ))}
           </TableBody>
         </Table>
-      </TableContainer> 
+      </TableContainer>
     </Box>
   )
 }

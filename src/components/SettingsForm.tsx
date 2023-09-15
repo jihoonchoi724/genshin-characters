@@ -1,21 +1,13 @@
-import { useState, useEffect } from 'react'
-import { styled } from '@mui/material/styles'
-import ButtonBase from '@mui/material/ButtonBase'
-import Typography from '@mui/material/Typography'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import { CardActionArea } from '@mui/material'
-import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
-import Switch from '@mui/material/Switch';
-import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid'
+import Switch from '@mui/material/Switch'
+import TextField from '@mui/material/TextField'
+import Typography from '@mui/material/Typography'
+import { useEffect, useState } from 'react'
 
 export const SettingsForm = () => {
   const parsedBirthday = localStorage.getItem("traveler-birthday")!.split("-")
-  const validDate = (parsedBirthday.length == 3)
+  const validDate = (parsedBirthday.length === 3)
   const [travelerGender, setTravelerGender] = useState<boolean>(JSON.parse(localStorage.getItem("traveler-gender")!)) //false == m, true = f
   const [travelerBirthdayMonth, setTravelerBirthdayMonth] = useState<string>(validDate ? (parsedBirthday[1]) : ("1"))
   const [travelerBirthdayDay, setTravelerBirthdayDay] = useState<string>(validDate ? (parsedBirthday[2]) : ("1"))
@@ -33,7 +25,7 @@ export const SettingsForm = () => {
   useEffect(() => {
     localStorage.setItem("traveler-name", travelerName)
   }, [travelerName])
-  
+
   useEffect(() => {
     localStorage.setItem("wanderer-name", wandererName)
   }, [wandererName])
@@ -60,7 +52,7 @@ export const SettingsForm = () => {
             <Typography fontSize={25} fontWeight={'bold'} color={'white'} margin={'15px'}>Traveler's gender</Typography>
           </Grid>
           <Grid xs={6} margin='auto'>
-            <Switch 
+            <Switch
               checked={travelerGender}
               onChange={(e) => setTravelerGender(e.target.checked)}
             />
@@ -69,7 +61,7 @@ export const SettingsForm = () => {
             <Typography fontSize={25} fontWeight={'bold'} color={'white'} margin={'15px'}>Traveler's birthday</Typography>
           </Grid>
           <Grid xs={6} margin='auto'>
-            <TextField 
+            <TextField
               required
               id="traveler-birthday-month"
               label="Month"
@@ -91,7 +83,7 @@ export const SettingsForm = () => {
                 },
               }}
             />
-            <TextField 
+            <TextField
               required
               id="traveler-birthday-day"
               label="Day"
