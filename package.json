@@ -52,7 +52,6 @@
   },
   "devDependencies": {
     "@types/webpack-env": "^1.18.0"
-  },
-  "homepage": "https://jihoonchoi724.github.io/genshin-characters"
+  }
 }
 
